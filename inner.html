@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="utf-8">	 
+	<link href="https://fonts.googleapis.com/css?family=Roboto:400,700&amp;subset=cyrillic" rel="stylesheet"> 
+	<link rel="stylesheet" href="css/style.css">	
+	<title>Каталог сливочного мороженого</title>
+</head>
+<body>
+	<input type="radio" id="btn-1" name="toggle" checked>
+    <input type="radio" id="btn-2" name="toggle">
+    <input type="radio" id="btn-3" name="toggle">
+	<div class="site-wrapper">
+		<div class="container">
+			<header class="main-header">				
+				<nav class="main-navigation">
+					<div class="main-header-logo">
+						<a href="index.html">
+							<img src="img/logo.svg" alt="логотип студии" width="154" height="64">
+						</a>
+					</div>
+					<ul class="main-navigation-left">
+						<li class="main-navigation-catalog">
+							<a>Каталог</a>															
+						</li>
+						<li>
+							<a href="#">Доставка и оплата</a>
+						</li>
+						<li>
+							<a href="#">О компании</a>
+						</li>		
+					</ul>				
+					<ul class="main-user-navigation">			
+						<li class="main-user-navigation-search">
+							<a href="#">
+								<span class="visually-hidden">Поиск
+								</span>
+							</a>	
+							<form class="main-user-form-search" method="get" action="https://echo.htmlacademy.ru">
+								<input type="search" name="search" placeholder="Что ищем?">
+							</form>	
+						</li>
+						<li class="main-user-navigation-login">
+							<a href="#">Вход</a>							
+						</li>				
+						<li class="main-user-navigation-busket">
+							<a href="#">2 товара</a>
+							<div class="main-busket-choice">
+								<div class="busket-choice-item">
+									<button type="button" class="busket-choice-item-delete">убрать товар</button>
+									<h3>Пломбир с апельсиновым джемом</h3>
+									<p>1,5кг * 200 руб</p>
+									<p>300 руб</p>
+								</div>
+								<div class="busket-choice-item">
+									<button type="button" class="busket-choice-item-delete">убрать товар</button>
+									<h3>Клубничный пломбир с присыпкой из белого шоколада</h3>
+									<p>1,5кг * 300 руб</p>
+									<p>450 руб</p>
+								</div>
+								<a class="checkout" href="#">Оформить заказ</a>
+							</div>
+						</li>				
+					</ul>		
+				</nav>	
+				<div class="contacts">
+					<p>С 10 до 20, ежедневно
+					</p>
+					<p>
+						<span>8 812 450-25-25
+						</span>	
+					</p>		
+				</div>					
+			</header>
+			<main class="container">				
+				<nav class="breadcrumbs">
+					<ul>
+						 <li>
+							<a href="">Главная</a>
+						</li>			 
+						 <li>
+							<a href="">Каталог</a>
+						</li>
+						 <li>
+							<a>Сливочное</a>
+						</li>
+					</ul>
+				</nav>	
+				<h1>Сливочное мороженое</h1>
+				<div class="filters">
+					<form class="filters-vendors" action="https://echo.htmlacademy.ru" method="post">
+						<fieldset>
+							<legend>Сортировка</legend>
+							<select name="theme">
+								<option value="popular">По популярности</option>
+								<option value="low-price">Сначала недорогие</option>
+								<option value="high-price">Сначала дорогие</option>
+								<option value="fatness">По жирности</option>							  
+							</select>
+						</fieldset>
+						<fieldset>
+							<legend>Цена: 100руб. - 500руб.</legend>
+							<div class="range-controls">
+								<div class="scale">
+									<div class="bar">
+									</div>
+								</div>
+								<div class="range-toggle range-toggle-min">
+								</div>
+								<div class="range-toggle range-toggle-max">
+								</div>
+							</div>
+						</fieldset>
+						<fieldset>
+							<legend>Жирность:</legend>
+							<p>
+								<input type="radio" name="milk" id="milk-no-fatness-field" value="no-fatness">
+								<label for="milk-no-fatness-field">0%</label>
+							</p>
+							<p>
+								<input type="radio" name="milk" id="milk-10-fatness-field" value="10-fatness">
+								<label for="milk-10-fatness-field">до 10%</label>
+							</p>
+							<p>
+								<input type="radio" name="milk" id="milk-30-fatness-field" value="30-fatness">
+								<label for="milk-30-fatness-field">до 30%</label>
+							</p>
+							<p>
+								<input type="radio" name="milk" id="milk-above-30-fatness-field" value="above-30-fatness">
+								<label for="milk-above-30-fatness-field">выше 30%</label>
+							</p>
+						</fieldset>
+						<fieldset>
+							<legend>Наполнители:</legend>
+							<p>
+								<input type="checkbox" name="chocolate" id="chocolate-field">
+								<label for="chocolate-field">шоколадные</label>
+							</p>
+							<p>
+								<input type="checkbox" name="sugar" id="sugar-field">
+								<label for="sugar-field">сахарные присыпки</label>
+							</p>
+							<p>
+								<input type="checkbox" name="fruits" id="fruits-field">
+								<label for="fruits-field">фрукты</label>
+							</p>
+							<p>
+								<input type="checkbox" name="syrup" id="syrup-field">
+								<label for="syrup-field">сиропы</label>
+							</p>
+							<p>
+								<input type="checkbox" name="jem" id="jem-field">
+								<label for="jem-field">джем</label>
+							</p>
+						</fieldset>		
+						<button class="btn-form" type="submit">Применить</button>	
+					</form>
+				</div>
+				<div class="features">
+					<div class="features-row">
+						<article class="features-item">
+							<img src="http://placehold.it/267x267" alt="">
+							<h2>Сливочное с апельсиновым джемом и цитрусовой стружкой</h2>
+							<b>310 &#8381;/кг</b>							
+							<a class="features-item-btn" href="#">Быстрый просмотр</a>
+						</article>
+						<article class="features-item">
+							<img src="http://placehold.it/267x267" alt="">
+							<h2>Сливочно-кофейное с кусочками шоколада</h2>
+							<b>380 &#8381;/кг</b>
+							<a class="features-item-btn" href="#">Быстрый просмотр</a>
+						</article>
+						<article class="features-item">
+							<img src="http://placehold.it/267x267" alt="">
+							<h2>Сливочно-клубничное с присыпкой из белого шоколада</h2>
+							<b>355 &#8381;/кг</b>
+							<a class="features-item-btn" href="#">Быстрый просмотр</a>
+						</article>
+						<article class="features-item">
+							<img src="http://placehold.it/267x267" alt="">
+							<h2>Сливочное крем-брюле с карамельной подливкой</h2>
+							<b>415 &#8381;/кг</b>
+							<a class="features-item-btn" href="#">Быстрый просмотр</a>
+						</article>
+					</div>
+					<div class="features-row">
+						<article class="features-item">
+							<img src="http://placehold.it/267x267" alt="">
+							<h2>Сливочное с брусничным джемом</h2>
+							<b>325 &#8381;/кг</b>
+							<a class="features-item-btn" href="#">Быстрый просмотр</a>
+						</article>
+						<article class="features-item">
+							<img src="http://placehold.it/267x267" alt="">
+							<h2>Сливочно-черничное с цельными ягодами черники </h2>
+							<b>410 &#8381;/кг</b>
+							<a class="features-item-btn" href="#">Быстрый просмотр</a>
+						</article>
+						<article class="features-item">
+							<img src="http://placehold.it/267x267" alt="">
+							<h2>Сливочно-лимонное с карамельной присыпкой</h2>
+							<b>375 &#8381;/кг</b>
+							<a class="features-item-btn" href="#">Быстрый просмотр</a>
+						</article>
+						<article class="features-item">
+							<img src="http://placehold.it/267x267" alt="">
+							<h2>Сливочное с шоколадной стружкой</h2>
+							<b>320 &#8381;/кг</b>
+							<a class="features-item-btn" href="#">Быстрый просмотр</a>
+						</article>
+					</div>
+					<div class="features-row">
+						<article class="features-item">
+							<img src="http://placehold.it/267x267" alt="">
+							<h2>Сливочно-ванильное с кусочками шоколада</h2>
+							<b>440 &#8381;/кг</b>
+							<a class="features-item-btn" href="#">Быстрый просмотр</a>
+						</article>
+						<article class="features-item">
+							<img src="http://placehold.it/267x267" alt="">
+							<h2>Сливочноe с ментоловым сиропом</h2>
+							<b>435 &#8381;/кг</b>
+							<a class="features-item-btn" href="#">Быстрый просмотр</a>
+						</article>
+						<article class="features-item">
+							<img src="http://placehold.it/267x267" alt="">
+							<h2>Сливочное с кусочками черного шоколада</h2>
+							<b>355 &#8381;/кг</b>
+							<a class="features-item-btn" href="#">Быстрый просмотр</a>
+						</article>
+						<article class="features-item">
+							<img src="http://placehold.it/220x165" alt="">
+							<h2>Сливочное с мятным сиропом</h2>
+							<b>420 &#8381;/кг</b>
+							<a class="features-item-btn" href="#">Быстрый просмотр</a>
+						</article>
+					</div>
+					<div class="features-paginator">
+						<a href="#">&lt;</a>	
+						<a class="current">1</a>
+						<a href="#">2</a>
+						<a href="#">3</a>
+						<a href="#">4</a>
+						<a href="#">5</a>
+						<a href="#">&gt;</a>							
+					</div>	
+				</div>								
+			</main>	
+			<footer class="main-footer">				
+				<div class="main-footer-content">
+					<section class="main-footer-social">
+						<a class="social-btn social-btn-tw" href="#">Твиттер</a>
+						<a class="social-btn social-btn-inst" href="#">Инстаграм</a>
+						<a class="social-btn social-btn-fb" href="#">Фейсбук</a>
+						<a class="social-btn social-btn-vk" href="#">Вконтакте</a>						
+					</section>
+					<section class="main-footer-links">
+						<div class="links-left">
+							<a href="#">Для поставщиков</a>
+							<a href="#">О производстве</a>
+						</div>
+						<div class="links-right">
+							<a href="#">Наши документы</a>
+							<a href="#">Экологические стандарты</a>
+						</div>	
+					</section>
+					<section class="footer-copyright">
+						<p></p>
+						<a class="btn logo-btn" href="https://htmlacademy.ru/intensive/htmlcss">Сделано в HTML Academy © 2017</a>
+					</section>
+				</div>
+			</footer>							
+		</div>	
+	</div>		
+</body>
