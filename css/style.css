@@ -78,6 +78,7 @@ body > input[type="radio"] {
 	background-image: url("../img/slide1-1.png");	
 	background-repeat: no-repeat;
 	background-position: top center;
+	background-color: #849d8f;	
 	-webkit-transition: background-image 0.5s ease, background-color 0.5s ease;
 	-o-transition: background-image 0.5s ease, background-color 0.5s ease;
 	transition: background-image 0.5s ease, background-color 0.5s ease;	
@@ -119,16 +120,17 @@ body > input[type="radio"] {
 	margin: 0;
 	margin-left: 10px;
 	margin-right: 16px;
-	margin-top: 15px;
+	margin-top: 13px;
 }	
 .main-navigation-left a{	
 	display: block;	
-	padding: 6px 14px; 
+	padding: 7px 15px; 
 	color: #ffffff;
 	font-size: 16px;
 	font-weight: 600;
 	line-height: 18px;	
 	text-decoration: none;
+	letter-spacing: -0.01em;
 }				
 .main-navigation-left > li > a:not(.active):hover {
 	background-color: #f7f6f3;	
@@ -216,6 +218,8 @@ ul.main-navigation-item .active {
 			align-items: flex-start;
 	width: 267px;	
 	padding: 0;
+	margin: 0;
+	margin-top: 13px;
 	font-size: 16px;
 	line-height: 18px;	
 	list-style: none;
@@ -501,7 +505,7 @@ li.main-user-navigation-busket:hover > a{
 .main-slider {
 	position: relative;
 	text-align: center;
-	padding-top: 275px;
+	padding-top: 273px;
 	margin-bottom: 40px;
 }	
 .slider-slide {
@@ -585,7 +589,7 @@ li.main-user-navigation-busket:hover > a{
 	padding-top: 15px;
 	padding-left: 20px;
 	padding-right: 20px;
-	padding-bottom: 24px;	
+	padding-bottom: 23px;
 	border-radius: 20px;
 }	
 .promo-item h3{
@@ -597,17 +601,21 @@ li.main-user-navigation-busket:hover > a{
 	font-weight: 700;	
 }	
 .promo-item:nth-child(2) {	
-	background: url(../img/malinka.jpg) no-repeat;
+	background-image: url(../img/malinka.jpg);
+	background-repeat: no-repeat;
+	background-color: #c72d51;
 }
 .promo-item:last-child {	
-	background: url(../img/chocolate.jpg) no-repeat;
+	background-image: url(../img/chocolate.jpg);
+	background-repeat: no-repeat;
+	background-color: #472a1c;
 }
 .promo-item p {
 	font-size: 18px;
 	line-height: 22px;
 	font-weight: 700;
 	margin: 0;
-	margin-bottom: 45px;
+	margin-bottom: 44px;
 }
 .promo-item .btn {
 	float: right;
@@ -632,7 +640,7 @@ li.main-user-navigation-busket:hover > a{
 	background: url(../img/hit.svg) no-repeat;
 }
 .shop {
-	padding: 25px 20px 22px 20px;	
+	padding: 25px 20px 24px 20px;	
 	color: #323232;
 	background: url(../img/vaflya.png) no-repeat;
 	background-color: #eee2cb;
@@ -642,10 +650,9 @@ li.main-user-navigation-busket:hover > a{
 .shop b {
 	padding: 0;
 	margin: 0;
-	margin-bottom: 2px;
+	margin-bottom: 5px;
 	font-size: 24px;
 	line-height: 30px;
-	letter-spacing: 0.005em;
 }	
 .shop-content {	
 	display: -webkit-box;	
@@ -663,7 +670,7 @@ li.main-user-navigation-busket:hover > a{
 	position: absolute;
 	height: 49px;
 	width: 49px;
-	top: 7px;
+	top: 10px;
 	left: 0px;
 	background: url(../img/ice-cream.svg) no-repeat;
 }	
@@ -672,7 +679,7 @@ li.main-user-navigation-busket:hover > a{
 	position: absolute;
 	height: 49px;
 	width: 49px;
-	top: 7px;
+	top: 10px;
 	left: 0px;
 	background: url(../img/eco.svg) no-repeat;	
 }	
@@ -681,7 +688,7 @@ li.main-user-navigation-busket:hover > a{
 	position: absolute;
 	height: 48px;
 	width: 49px;
-	top: 7px;
+	top: 10px;
 	left: 0px;
 	background: url(../img/cow.svg) no-repeat;	
 }	
@@ -690,7 +697,7 @@ li.main-user-navigation-busket:hover > a{
 	position: absolute;
 	height: 49px;
 	width: 49px;
-	top: 7px;
+	top: 10px;
 	left: 0px;
 	background: url(../img/thermometer.svg) no-repeat;		
 }	
@@ -716,6 +723,7 @@ li.main-user-navigation-busket:hover > a{
 	padding-right: 206px;
 	padding-bottom: 82px;
 	background: url(../img/shop-ice-cream.jpg) no-repeat;
+	background-color: #ffffff;
 	color: #323232;
 	border-radius: 20px;
 }
@@ -723,9 +731,8 @@ li.main-user-navigation-busket:hover > a{
 	color: #323232;
 	font-size: 22px;
 	line-height: 30px;
-	letter-spacing: -1px;
 	word-spacing: 3px;
-	font-weight: 700
+	font-weight: 700;
 }
 .index-content-left a:hover,
 .index-content-left a:active {
@@ -734,6 +741,7 @@ li.main-user-navigation-busket:hover > a{
 .index-content-left h3 {
 	padding: 0;
 	margin: 0;
+	letter-spacing: -0.05em;
 }	
 .index-content-left p {
 	padding: 0;
@@ -843,6 +851,7 @@ li.main-user-navigation-busket:hover > a{
 	background-image: url(../img/map.jpg);
 	background-repeat: no-repeat;
 	background-position: center;
+	background-color: #f4f0dd;
 	min-width: 1200px;
 	min-height: 428px;
 }	
@@ -860,6 +869,7 @@ li.main-user-navigation-busket:hover > a{
 }	
 .map-contacts {
 	position: absolute;
+	width: 260px;
 	top: 60px;
 	right: 25px;
 	color: #323232;
@@ -868,7 +878,7 @@ li.main-user-navigation-busket:hover > a{
 	background-color: #ffffff;	
 	padding-top: 30px;
 	padding-bottom: 30px;
-	padding-right: 27px;
+	padding-right: 17px;
 	padding-left: 27px;
 	border-radius: 20px;
 }	
@@ -885,11 +895,14 @@ li.main-user-navigation-busket:hover > a{
 	margin: 0;
 }	
 .map-contacts-phone {	
-	margin-bottom: 25px;
+	margin-bottom: 23px;
 }	
 .map-contacts-phone p{
 	margin: 0;
-	margin-bottom: 5px;
+	margin-bottom: 4px;
+}	
+p.phone-number {
+	margin-bottom: 1px;
 }	
 .map-contacts-btn {
 	padding-top: 10px;
@@ -964,7 +977,7 @@ a.social-btn:active {
 		-ms-flex-pack: center;
 			justify-content: center;
 	width: 560px;
-	padding-top: 13px;	
+	padding-top: 11px;	
 	text-align: center;
 }
 .links-left {
@@ -1337,7 +1350,7 @@ p.busket-item-price {
 	display: flex;
 	list-style: none;
 	margin: 0;
-	margin-top: 20px;
+	margin-top: 17px;
 	padding: 0;
 }	
 .breadcrumbs li {
@@ -1684,13 +1697,14 @@ select::-ms-expand {
 .products-item h2,
 .products-item h3 {
 	margin: 0;	
-	padding: 0;
+	padding: 0;	
 	padding-bottom: 2px;
 	font-size: 16px;
 	line-height: 22px;
 	text-align: center;	
 	color: #ffffff;	
-}		
+	letter-spacing: 0.02em;
+}	
 .products-item b{
 	position: absolute;
 	top: 210px;
@@ -1702,6 +1716,7 @@ select::-ms-expand {
 .products-item span {
 	font-size: 30px;
 	padding-left: 35px;
+	margin-left: 2px;
 }	
 span.underline {		
 	margin: 0;	
@@ -1710,6 +1725,7 @@ span.underline {
 	line-height: 22px;
 	text-align: center;	
 	color: #ffffff;
+	
 }	
 .main-navigation-left .underline {	
 	position: relative;	
